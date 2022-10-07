@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --charcoal: #404667;
+    --blue: #62a6ea;
+    --gold: #dacb72;
+    --grey: #5d5d65;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--blue);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+    background-color: var(--charcoal);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 48px;
+    background-color: var(--grey);
+    padding: 8px;
+    padding-left: 32px;
+}
+
+header ul {
+    margin: 8px;
+}
+
+header ul li {
+    display: inline-flex;
+    border-bottom: 4px solid var(--blue);
+    font-size: 24px;
+    padding: 4px;
+    margin: 2px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+header ul li a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    position: relative;
+    background-image: url("https://i.pinimg.com/originals/29/c4/b3/29c4b30daba3ea872f5ffef92fbb5f9d.jpg");
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 24px;
+}
+
+.hero h2 {
+    position: absolute;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    bottom: 24px;
+    right: 24px;
+    align-self: flex-end;
+    color: var(--blue);
+    background-color: var(--grey);
+    padding: 16px;
+}
+
+main { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .card {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 40px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+main .card h3 {
+    vertical-align: text-top;
+    text-align: right;
+    width: 25vw;
+    font-weight: 500;
+    font-size: 40px;
+    border-right: 4px solid var(--blue);
+    padding-right: 24px;
+    padding-bottom: 8px;
+}
+
+main .card aside {
+    padding-left: 24px;
+    width: 75vw;
+    font-weight: 400;
+    font-size: 24px;
+}
+main .gallery {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+main .gallery ul li {
+    border: 4px solid var(--blue);
+    position: relative;
+}
+
+main .stars {
+    display: block;
+    position: relative;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 65vw;
+    background-color: #262a3f93;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+main .stars .caption {
+    background-color: var(--grey);
+    color: var(--blue);
+    position: absolute;
+    padding-left: 24px;
+    left: 0;
+    bottom: 16px;
+
+}
+
+main .intro {
+    width: 65vw;
+}
+
+main .book {
+    display: block;
+    height: 20vh;
+    width: 32vw;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+main .stars:hover, .book:hover {
+    opacity: 1;
+}
+
+main .flexit {
+    display: flex;
+    margin: 16px 0px;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+.contact ul {
+    display: flex;
+    width: 65vw;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--blue);
+}
+.contact a:hover {
+    color: var(--gold);
+}
+
+footer {
+    background-color: var(--charcoal);
+}
